@@ -9,6 +9,9 @@
     <Grid Margin="0,0,66,11">
         <DataGrid x:Name="datagrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="27,85,-32,29"/>
         <Button Content="Obtener Datos" HorizontalAlignment="Left" Margin="27,23,0,0" VerticalAlignment="Top" Height="40" Width="112" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="213,10,0,0" VerticalAlignment="Top" Width="76" Source="/5616.png" Stretch="Fill"/>
+        <Label Content="BSEnterprises" HorizontalAlignment="Left" Margin="311,17,0,0" Width="138" VerticalAlignment="Top" HorizontalContentAlignment="Center"/>
+        <Label Content="Tenemos de todo, menos lo que queres" HorizontalAlignment="Left" Margin="342,36,0,0" VerticalAlignment="Top" FontSize="5"/>
 
     </Grid>
     <Window.DataContext>
