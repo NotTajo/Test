@@ -5,12 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Test"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="622" Width="1130" ResizeMode="CanMinimize">
+    <Grid Margin="0,10,316,-58">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="697*"/>
-            <ColumnDefinition Width="103*"/>
+            <ColumnDefinition Width="691*"/>
+            <ColumnDefinition Width="104*"/>
         </Grid.ColumnDefinitions>
+        <Button Content="Create Database &amp; Tables" HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Width="163" Click="Button_Click" Margin="21,21,0,0"/>
+        <DataGrid x:Name="datagrid1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="21,155,0,101" SelectionMode="Single" HorizontalAlignment="Left" Width="290" SelectedIndex="1"/>
+        <Button Content="Create Database &amp; Tables" VerticalAlignment="Top" Height="59" Click="Button_Click" Margin="21,21,0,0" HorizontalAlignment="Left" Width="163"/>
+        <Button x:Name="Añadir" Content="Añadir Producto" HorizontalAlignment="Left" Margin="313,16,0,0" VerticalAlignment="Top" Height="59" Width="138" Click="Añadir_Click"/>
+        <DataGrid x:Name="datagrid2" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="331,155,0,101" HorizontalAlignment="Left" Width="403" Grid.ColumnSpan="2"/>
+        <Button x:Name="Modificar" Content="Modificar Producto" HorizontalAlignment="Left" Margin="456,16,0,0" VerticalAlignment="Top" Height="59" Width="137" Click="Modificar_Click"/>
+        <Button x:Name="Eliminar" Content="Eliminar Producto" HorizontalAlignment="Left" Margin="598,16,0,0" VerticalAlignment="Top" Height="59" Width="136" Grid.ColumnSpan="2" Click="Eliminar_Click"/>
+        <DataGrid x:Name="datagrid3" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="70,155,-278,101" Grid.Column="1"/>
+        <Label Content="Tipos" HorizontalAlignment="Left" Margin="37,552,0,0" VerticalAlignment="Top" Width="147" Height="26"/>
+        <Label Content="Productos" HorizontalAlignment="Left" Margin="331,552,0,0" VerticalAlignment="Top" Width="147" Height="26"/>
+        <Label Content="Stock" Margin="70,552,-94,0" VerticalAlignment="Top" Grid.Column="1" Height="26"/>
+        <Button x:Name="FrontAccess" Grid.Column="1" Content="Ver Front" Margin="195,16,-236,0" VerticalAlignment="Top" Height="54" Click="FrontAccess_Click"/>
+        <RadioButton x:Name="n_radio" Content="Nombre" HorizontalAlignment="Left" Margin="456,90,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="c_radio" Content="Cantidad" HorizontalAlignment="Left" Margin="532,90,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="p_radio" Content="Precio" HorizontalAlignment="Left" Margin="456,110,0,0" VerticalAlignment="Top" Checked="p_radio_Checked"/>
+        <RadioButton x:Name="t_radio" Content="Tipo" HorizontalAlignment="Left" Margin="532,110,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
